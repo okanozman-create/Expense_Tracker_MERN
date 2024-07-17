@@ -15,7 +15,7 @@ const Register = () => {
       //   newUser
       // );
       const response = await axios.post(
-        "https://juz13lwu78.execute-api.eu-west-1.amazonaws.com/DEV/myExpenseFunction/auth/register",
+        "https://backend-nr2q.onrender.com/auth/register",
         newUser
       );
       

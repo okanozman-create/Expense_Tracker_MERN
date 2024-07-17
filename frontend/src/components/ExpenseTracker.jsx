@@ -22,7 +22,7 @@ const ExpenseTracker = () => {
       }
       try {
         // const response = await axios.get("http://localhost:5000/expenses", {
-          const response = await axios.get("https://juz13lwu78.execute-api.eu-west-1.amazonaws.com/DEV/myExpenseFunction/expenses", {
+          const response = await axios.get("https://backend-nr2q.onrender.com/expenses", {
           headers: {
             "x-auth-token": token,
           },
@@ -62,7 +62,7 @@ const ExpenseTracker = () => {
       const token = localStorage.getItem("awsToken");
       const response = await axios.post(
         // "http://localhost:5000/expenses",
-        "https://juz13lwu78.execute-api.eu-west-1.amazonaws.com/DEV/myExpenseFunction/expenses",
+        "https://backend-nr2q.onrender.com/expenses",
         newExpense,
         {
           headers: {
@@ -93,7 +93,7 @@ const ExpenseTracker = () => {
     try {
       await axios.delete(
         // `http://localhost:5000/expenses/${transactionToDelete._id}`
-        `https://juz13lwu78.execute-api.eu-west-1.amazonaws.com/DEV/myExpenseFunction/expenses/${transactionToDelete._id}`,
+        `https://backend-nr2q.onrender.com/expenses/${transactionToDelete._id}`,
       );
 
       const updatedTransactions = [...transactions];
