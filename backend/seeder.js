@@ -8,7 +8,7 @@ connectDB();
 
 const fetchData = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/expenses');
+    const response = await axios.get('https://backend-nr2q.onrender.com/expenses');
     return response.data;
   } catch (error) {
     console.error(`Error fetching data: ${error.message}`);
