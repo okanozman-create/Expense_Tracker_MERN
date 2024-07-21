@@ -59,7 +59,17 @@ const ExpenseTracker = () => {
     };
 
     try {
+    
       const token = localStorage.getItem("awsToken");
+
+      if (!token) {
+        alert("You should Register or Login before adding an expense.");
+        setDescription("");
+        setAmount("");
+        return;
+      }
+
+
       const response = await axios.post(
         // "http://localhost:5000/expenses",
         "https://backend-nr2q.onrender.com/expenses",
