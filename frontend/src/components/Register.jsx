@@ -51,7 +51,7 @@ const Register = () => {
     <div className="min-h-full flex-col justify-center px-6  py-12">
       <button
         onClick={openModal}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-slate-700 transition-all duration-300 "
+        className="bg-blue-500 text-white px-2 py-1 lg:px-4 lg:py-2 rounded hover:bg-slate-700 transition-all duration-300 "
       >
         Register
       </button>

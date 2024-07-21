@@ -111,7 +111,7 @@ const ExpenseTracker = () => {
     <section className="section flex flex-col items-s">
       <div className="px-2">
         <div className="flex flex-col items-center gap-9">
-          <h2 className="text-4xl text-center text-black font-extrabold">
+          <h2 className="lg:text-4xl text-2xl text-center text-black font-extrabold">
             You've spent
           </h2>
 
@@ -128,7 +128,7 @@ const ExpenseTracker = () => {
         </div>
 
         <div className="mt-5 mb-8">
-          <form className="flex max-w-full px-12 py-2 gap-1">
+          <form className="flex flex-col lg:flex-row max-w-full px-12 py-2 gap-1">
             <input
               placeholder="Expense Name"
               type="text"

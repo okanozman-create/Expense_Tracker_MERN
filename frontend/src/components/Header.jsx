@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between h-20 bg-gray-800 text-white px-4'>
       <div>
-        <h1 className='text-3xl tracking-wider'>Expense Tracker</h1>
+        <h1 className='text-xl  lg:text-3xl tracking-wider'>Expense Tracker</h1>
       </div>
       <div className='flex'>
         {!isLoggedIn ? (
